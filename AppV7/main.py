@@ -53,8 +53,15 @@ def init_ses_states():
 # Get Current Users User ID
 
 
+current_directory = os.getcwd()
+# Specify the image filename
+image_filename = 'trippyPattern.png'  # Replace with your image filename
+# Construct the full path to the image
+image_path = os.path.join(current_directory, image_filename)
+
+
 def page_title_header():
-    top_image = Image.open('trippyPattern.png')
+    top_image = Image.open(image_path)
     st.image(top_image)
     st.title("GPT-4 Coding Assistant")
     st.caption("Powered by OpenAI, LangChain, Streamlit")
