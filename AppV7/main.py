@@ -359,11 +359,11 @@ def display_file_code(filename):
 def display_all_code():
     st.subheader("GitHub Link")
     st.write("https://github.com/petermartens98/GPT4-Programming-Assistant")
-    st.subheader("Source Code")
-    files = ["main.py", "db_functions.py",
-             "htmlTemplates.py", "prompts.py", "requirements.txt"]
-    for file in files:
-        display_file_code(file)
+    # st.subheader("Source Code")
+    # files = ["main.py", "db_functions.py",
+    #          "htmlTemplates.py", "prompts.py", "requirements.txt"]
+    # for file in files:
+    #     display_file_code(file)
 
 
 def main():
