@@ -205,7 +205,7 @@ def sidebar():
 
                 with chatbot_settings_tab:
                     model = st.selectbox("Language Model", options=[
-                                         'gpt-4-0613', 'gpt-4', 'gpt-3.5-turbo'])
+                                         'gpt-3.5-turbo', 'gpt-4-0613', 'gpt-4'])
                     temperature = st.slider(
                         label="Temperature", min_value=0.0, max_value=1.0, value=0.5)
 
