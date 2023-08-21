@@ -53,18 +53,18 @@ def init_ses_states():
 # Get Current Users User ID
 
 
-current_directory = os.getcwd()
-# Specify the image filename
-image_filename = 'trippyPattern.png'  # Replace with your image filename
-# Construct the full path to the image
-image_path = os.path.join(current_directory, image_filename)
+# current_directory = os.getcwd()
+# # Specify the image filename
+# image_filename = 'trippyPattern.png'  # Replace with your image filename
+# # Construct the full path to the image
+# image_path = os.path.join(current_directory, image_filename)
 
 
-def page_title_header():
-    top_image = Image.open(image_path)
-    st.image(top_image)
-    st.title("GPT-4 Coding Assistant")
-    st.caption("Powered by OpenAI, LangChain, Streamlit")
+# def page_title_header():
+#     top_image = Image.open(image_path)
+#     st.image(top_image)
+#     st.title("GPT-4 Coding Assistant")
+#     st.caption("Powered by OpenAI, LangChain, Streamlit")
 
 
 def get_pdf_text(pdf_docs):
@@ -371,7 +371,7 @@ def main():
     create_users_db()
     create_messages_db()
     init_ses_states()
-    page_title_header()
+    # page_title_header()
     sidebar()
     if st.session_state.user_authenticated:
         if st.session_state.docs_processed:
